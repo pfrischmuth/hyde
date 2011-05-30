@@ -49,10 +49,11 @@ class HTMLCompressor:
 					compress = os.path.join(
 							os.path.dirname(
 							os.path.abspath(__file__)), "..", compress)
-					if not compress or not os.path.exists(compress):
+				if not compress or not os.path.exists(compress):
 					raise ValueError(
 					"HTML Compressor cannot be found at [%s]" % compress)
-					tmp_file = File(thefile.path + ".z-tmp")
+				
+				tmp_file = File(thefile.path + ".z-tmp")
 				status, output = commands.getstatusoutput(
 				u"java -jar %s %s > %s" % (compress, thefile.path, tmp_file.path))
 				if status > 0:
