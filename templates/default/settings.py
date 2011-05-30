@@ -128,7 +128,7 @@ YUI_COMPRESSOR = None
 # want to compress JS/CSS. Project homepage:
 # http://closure-compiler.googlecode.com/
 #CLOSURE_COMPILER = "./lib/compiler.jar"
-CLOSURE_COMPRILER = None
+CLOSURE_COMPILER = None
 
 # path for HTMLCompressor, or None if you don't
 # want to compress HTML. Project homepage:
