@@ -94,6 +94,9 @@ SITE_POST_PROCESSORS = {
     #                'pattern':"*.js"
     #        }
     #    }
+    # '/': {
+    #         'hydeengine.site_post_processors.HTMLCompressor' : {}
+    #     }
 }
 
 CONTEXT = {
@@ -126,6 +129,12 @@ YUI_COMPRESSOR = None
 # http://closure-compiler.googlecode.com/
 #CLOSURE_COMPILER = "./lib/compiler.jar"
 CLOSURE_COMPILER = None
+
+# path for HTMLCompressor, or None if you don't
+# want to compress HTML. Project homepage:
+# http://code.google.com/p/htmlcompressor/
+#HTML_COMPRESSOR = "./lib/htmlcompressor-1.3.1.jar"
+HTML_COMPRESSOR = None
 
 # path for HSS, which is a preprocessor for CSS-like files (*.hss)
 # project page at http://ncannasse.fr/projects/hss
