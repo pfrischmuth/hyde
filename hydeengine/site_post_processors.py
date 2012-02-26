@@ -55,7 +55,7 @@ class HTMLCompressor:
 				
 				tmp_file = File(thefile.path + ".z-tmp")
 				status, output = commands.getstatusoutput(
-				u"java -jar %s %s > %s" % (compress, thefile.path, tmp_file.path))
+				"java -jar %s \"%s\" > \"%s\"" % (compress, thefile.path, tmp_file.path))
 				if status > 0:
 					print output
 				else:
